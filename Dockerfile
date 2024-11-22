@@ -1,8 +1,8 @@
 # Dependency Image
-FROM tenable/terrascan:1.17.0 as terrascan
+FROM tenable/terrascan as terrascan
 
 # Base Image
-FROM alpine:3.16
+FROM alpine:3.20.3
 
 RUN apk update && \
     apk add --no-cache git openssh
